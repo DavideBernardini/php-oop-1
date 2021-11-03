@@ -1,77 +1,77 @@
 <?php
 
 class Movie {
-    private $titolo;
-    private $regista;
-    private $lingua;
-    private $anno;
-    private $durata;
-    private $casaProduttrice;
-    private $generi;
-    private $attori;
+    private $title;
+    private $director;
+    private $language;
+    private $year;
+    private $duration;
+    private $studio;
+    private $genres;
+    private $actors;
 
-    public function __construct($_titolo, $_regista, $_lingua, $_anno, $_durata = NULL, $_casaProduttrice = NULL, $_generi = [],  $_attori = [])
+    public function __construct($_title, $_director, $_language, $_year, $_duration = NULL, $_studio = NULL, $_genres = [],  $_actors = [])
     {
-        $this->titolo = $_titolo;
-        $this->regista = $_regista;
-        $this->lingua = $_lingua;
-        $this->anno = $_anno;
-        $this->durata = $_durata;
-        $this->casaProduttrice = $_casaProduttrice;
-        $this->generi = $_generi;
-        $this->attori = $_attori;
+        $this->title = $_title;
+        $this->director = $_director;
+        $this->language = $_language;
+        $this->year = $_year;
+        $this->duration = $_duration;
+        $this->studio = $_studio;
+        $this->genres = $_genres;
+        $this->actors = $_actors;
     }
 
     // get functions
 
-    public function getTitolo()
+    public function getTitle()
     {
-        return $this->titolo;
+        return $this->title;
     }
 
-    public function getRegista()
+    public function getDirector()
     {
-        return $this->regista;
+        return $this->director;
     }
-    public function getLingua()
+    public function getLanguage()
     {
-        return $this->lingua;
-    }
-
-    public function getAnno()
-    {
-        return $this->anno;
+        return $this->language;
     }
 
-    public function getDurata()
+    public function getYear()
     {
-        return $this->durata;
+        return $this->year;
     }
 
-    public function getGeneri()
+    public function getDuration()
     {
-        return $this->generi;
+        return $this->duration;
     }
 
-    public function getCasaProduttrice()
+    public function getGenres()
     {
-        return $this->casaProduttrice;
+        return $this->genres;
     }
 
-    public function getAttori()
+    public function getStudio()
     {
-        return $this->attori;
+        return $this->studio;
+    }
+
+    public function getActors()
+    {
+        return $this->actors;
     }
 
     // set functions
 
-    public function setAttori($_attore)
+    public function setActors($_actor)
     {
-        $this->attori[] = $_attore;
+        $this->actors[] = $_actor;
     }
-    public function setGeneri($_genere)
+    public function setGenres($_genere)
     {
-        $this->generi[] = $_genere;
+        $this->genres[] = $_genere;
     }
 }
 
